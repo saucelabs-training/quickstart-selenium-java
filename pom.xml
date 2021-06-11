@@ -7,6 +7,33 @@
     <groupId>org.example</groupId>
     <artifactId>quickstart-java</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Sauce Labs Quickstart Java Junit4</name>
+    <description>A very simple test case for use with evaluating the
+        automated testing capabilities of the sauce labs dashboard using
+        Java and the JUnit 4 testrunner, along with Sauce Bindings
+    </description>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.saucelabs/sauce_bindings_junit4 -->
+        <dependency>
+            <groupId>com.saucelabs</groupId>
+            <artifactId>sauce_bindings_junit4</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>
